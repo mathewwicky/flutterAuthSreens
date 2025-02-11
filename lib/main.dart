@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/signupscreen.dart';
 
 void main() {
   return runApp(MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
+        '/signup': (context) => HostWidget(),
       },
     );
   }
@@ -94,7 +96,9 @@ class HomeScreen extends StatelessWidget {
               elevation: 2,
               minimumSize: Size(300, 50),
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/signup');
+            },
             child: Text(
               "Create Account",
               style: TextStyle(
