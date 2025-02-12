@@ -28,26 +28,33 @@ class Signupscreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
-          Text("Email"),
+          Text("Email",
+          textAlign: TextAlign.end,),
          // SizedBox(height: 2),
-          TextFormField(
-            decoration: InputDecoration(
-              
-             // labelText: "Email",
-              hintText: "example@gmail.com",
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: TextFormField(
+              decoration: InputDecoration(
+                
+               // labelText: "Email",
+                hintText: "example@gmail.com",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             ),
           ),
           SizedBox(height: 16),
            Text("Create Password"),
          // SizedBox(height: 1),
-          TextFormField(
-            decoration: InputDecoration(
-              
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: TextFormField(
+              decoration: InputDecoration(
+                
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             ),
           ),
@@ -55,12 +62,15 @@ class Signupscreen extends StatelessWidget {
           
            Text("Confirm Password"),
           //SizedBox(height: 1),
-          TextFormField(
-            decoration: InputDecoration(
-              //labelText: "Confirm Password",
-             // hintText: "example@gmail.com",
-              border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(10),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 10),
+            child: TextFormField(
+              decoration: InputDecoration(
+                //labelText: "Confirm Password",
+               // hintText: "example@gmail.com",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10),
+                ),
               ),
             ),
           ),
