@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => HomeScreen(),
-        '/signup': (context) => HostWidget(),
+        '/signup': (context) => Signupscreen(),
       },
     );
   }
@@ -35,8 +35,7 @@ class HomeScreen extends StatelessWidget {
               color: Colors.white,
               // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 36),
               //width: double.infinity,
-              width: 320,
-              height: 320,
+             
               child: Image.asset(
                 'assets/images/log.png',
               )),
