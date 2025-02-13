@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/signupscreen.dart';
-
+import 'package:flutter_auth/signscreen.dart';
 void main() {
   return runApp(MyApp());
 }
@@ -15,7 +15,9 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => HomeScreen(),
         '/signup': (context) => Signupscreen(),
+        '/signin': (context) => Signscreen(),
       },
+      //home: ,
     );
   }
 }
@@ -35,7 +37,7 @@ class HomeScreen extends StatelessWidget {
               color: Colors.white,
               // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 36),
               //width: double.infinity,
-             
+
               child: Image.asset(
                 'assets/images/log.png',
               )),
@@ -68,7 +70,9 @@ class HomeScreen extends StatelessWidget {
           ),
 
           ElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/signin');
+            },
             child: Text(
               "Sign In",
               style: TextStyle(

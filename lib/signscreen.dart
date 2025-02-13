@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Signupscreen extends StatelessWidget {
-  const Signupscreen({super.key});
+class Signscreen extends StatelessWidget {
+  const Signscreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -16,17 +16,20 @@ class Signupscreen extends StatelessWidget {
             child: Image.asset('assets/images/log.png'),
           ),
           SizedBox(height: 20),
-         
+
           Padding(
             padding: const EdgeInsets.only(top: 2),
             child: Container(
               margin: EdgeInsets.only(left: 20),
               alignment: Alignment.topLeft,
-              child: Text("Sign Up",style: TextStyle(
-                   fontFamily: 'Poppins',
+              child: Text(
+                "Log in",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                 ),),
+                ),
+              ),
             ),
           ),
           SizedBox(height: 20),
@@ -58,7 +61,7 @@ class Signupscreen extends StatelessWidget {
           Container(
             alignment: Alignment(-0.9, 0),
             child: Text(
-              "Create Password",
+              "Password",
               style: TextStyle(
                 fontFamily: "Poppins",
                 fontSize: 15,
@@ -78,11 +81,13 @@ class Signupscreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 16),
-          
+
           Container(
-            alignment: Alignment(-0.9, 0),
+            padding: EdgeInsets.only(bottom: 6, top: 4),
+            margin: EdgeInsets.only(left: 250),
             child: Text(
-              "Confirm Password",
+              "Forgot password?",
+              textAlign: TextAlign.end,
               style: TextStyle(
                 fontFamily: "Poppins",
                 fontSize: 15,
@@ -90,20 +95,8 @@ class Signupscreen extends StatelessWidget {
               ),
             ),
           ),
-          //SizedBox(height: 1),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 10),
-            child: TextFormField(
-              decoration: InputDecoration(
-                //labelText: "Confirm Password",
-                // hintText: "example@gmail.com",
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10),
-                ),
-              ),
-            ),
-          ),
-          SizedBox(height: 16),
+
+          SizedBox(height: 28),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
               elevation: 2,
@@ -115,7 +108,7 @@ class Signupscreen extends StatelessWidget {
             ),
             onPressed: () {},
             child: Text(
-              "Sign Up",
+              "Log in",
               style: TextStyle(
                 fontFamily: "Poppins",
                 color: Colors.white,
@@ -124,7 +117,7 @@ class Signupscreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20),
-          Text("______________Or Register with_____________"),
+          Text("______________Or Login with_____________"),
           SizedBox(height: 20),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
@@ -170,7 +163,7 @@ class Signupscreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                "Already have an account?",
+                "Don’t have an account?",
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 14,
@@ -179,10 +172,10 @@ class Signupscreen extends StatelessWidget {
               ),
               TextButton(
                 onPressed: () {
-                  Navigator.pushNamed(context, '/signin');
+                  Navigator.pushNamed(context, '/signup');
                 },
                 child: Text(
-                  "Login",
+                  "Sign up",
                   style: TextStyle(
                     fontFamily: 'Poppins',
                     fontSize: 14,
