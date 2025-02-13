@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_auth/forgotpassword.dart';
+import 'package:flutter_auth/forgotpasswordcode.dart';
 import 'package:flutter_auth/signupscreen.dart';
 import 'package:flutter_auth/signscreen.dart';
+
 void main() {
   return runApp(MyApp());
 }
@@ -16,6 +19,8 @@ class MyApp extends StatelessWidget {
         '/': (context) => HomeScreen(),
         '/signup': (context) => Signupscreen(),
         '/signin': (context) => Signscreen(),
+        '/forgotpassword': (context) => Forgotpassword(),
+        '/forgotpasswordcode': (context) => Forgotpasswordcode(),
       },
       //home: ,
     );
@@ -32,15 +37,16 @@ class HomeScreen extends StatelessWidget {
       body: Column(
         children: [
           Container(
-              margin: EdgeInsets.only(top: 100),
-              alignment: Alignment.center,
-              color: Colors.white,
-              // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 36),
-              //width: double.infinity,
+            margin: EdgeInsets.only(top: 100),
+            alignment: Alignment.center,
+            color: Colors.white,
+            // padding: EdgeInsets.symmetric(vertical: 20, horizontal: 36),
+            //width: double.infinity,
 
-              child: Image.asset(
-                'assets/images/log.png',
-              )),
+            child: Image.asset(
+              'assets/images/log.png',
+            ),
+          ),
           SizedBox(height: 20),
           //image componet
           Text(

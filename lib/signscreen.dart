@@ -82,16 +82,42 @@ class Signscreen extends StatelessWidget {
           ),
           SizedBox(height: 16),
 
+          // Container(
+          //   padding: EdgeInsets.only(bottom: 6, top: 4),
+          //   margin: EdgeInsets.only(left: 250),
+          //   child: Text(
+          //     "Forgot password?",
+          //     textAlign: TextAlign.end,
+          //     style: TextStyle(
+          //       fontFamily: "Poppins",
+          //       fontSize: 15,
+          //       fontWeight: FontWeight.normal,
+          //     ),
+          //   ),
+          // ),
+
           Container(
-            padding: EdgeInsets.only(bottom: 6, top: 4),
+            padding: EdgeInsets.only(bottom: 3, top: 1),
             margin: EdgeInsets.only(left: 250),
-            child: Text(
-              "Forgot password?",
-              textAlign: TextAlign.end,
-              style: TextStyle(
-                fontFamily: "Poppins",
-                fontSize: 15,
-                fontWeight: FontWeight.normal,
+            child: TextButton(
+              style: ElevatedButton.styleFrom(
+                padding: EdgeInsets.zero, // Remove extra padding
+                minimumSize: Size(0, 0), // Remove minimum tap area
+                tapTargetSize:
+                    MaterialTapTargetSize.shrinkWrap, // Prevent extra spacing
+              ),
+              onPressed: () {
+                Navigator.pushNamed(context, '/forgotpassword');
+              },
+              child: Text(
+                "Forgot password?",
+                textAlign: TextAlign.end,
+                style: TextStyle(
+                  fontFamily: "Poppins",
+                  fontSize: 15,
+                  fontWeight: FontWeight.normal,
+                  color: Colors.green,
+                ),
               ),
             ),
           ),
