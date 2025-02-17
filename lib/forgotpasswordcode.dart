@@ -20,7 +20,7 @@ class Forgotpasswordcode extends StatelessWidget {
                     ),
                   ),
                   onPressed: () {
-                    Navigator.pushNamed(context, '/signin');
+                    Navigator.pushNamed(context, '/forgotpassword');
                   },
                   child: Image.asset("assets/icons/chevron.left.png"),
                 ),
@@ -38,7 +38,7 @@ class Forgotpasswordcode extends StatelessWidget {
             "Please check your email",
             style: TextStyle(
               fontFamily: 'Poppins',
-              fontSize: 32,
+              fontSize: 30,
               fontWeight: FontWeight.bold,
             ),
           ),
@@ -62,47 +62,46 @@ class Forgotpasswordcode extends StatelessWidget {
                 width: 25,
                 child: TextField(
                   maxLength: 1,
-                  
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(counterText: "",
-                 ),
+                  decoration: InputDecoration(
+                    counterText: "",
+                  ),
                 ),
               ),
               SizedBox(
                 width: 25,
                 child: TextField(
                   maxLength: 1,
-                  
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(counterText: "",
-                 ),
+                  decoration: InputDecoration(
+                    counterText: "",
+                  ),
                 ),
               ),
               SizedBox(
                 width: 25,
                 child: TextField(
                   maxLength: 1,
-                  
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(counterText: "",
-                 ),
+                  decoration: InputDecoration(
+                    counterText: "",
+                  ),
                 ),
               ),
               SizedBox(
                 width: 25,
                 child: TextField(
                   maxLength: 1,
-                  
                   textAlign: TextAlign.center,
                   keyboardType: TextInputType.number,
-                  decoration: InputDecoration(counterText: "",
-                 ),
+                  decoration: InputDecoration(
+                    counterText: "",
+                  ),
                 ),
               ),
-              
             ],
           ),
           SizedBox(height: 28),
@@ -115,7 +114,9 @@ class Forgotpasswordcode extends StatelessWidget {
               ),
               backgroundColor: Colors.green,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, '/resetpassword');
+            },
             child: Text(
               "Verify",
               style: TextStyle(
@@ -123,36 +124,6 @@ class Forgotpasswordcode extends StatelessWidget {
                 color: Colors.white,
                 fontSize: 14,
               ),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top: 190),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  "Remember password?",
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 14,
-                    fontWeight: FontWeight.normal,
-                  ),
-                ),
-                TextButton(
-                  onPressed: () {
-                    Navigator.pushNamed(context, '/signin');
-                  },
-                  child: Text(
-                    "Sign in",
-                    style: TextStyle(
-                      fontFamily: 'Poppins',
-                      fontSize: 14,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.green,
-                    ),
-                  ),
-                ),
-              ],
             ),
           ),
         ],

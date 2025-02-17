@@ -16,17 +16,20 @@ class Signupscreen extends StatelessWidget {
             child: Image.asset('assets/images/log.png'),
           ),
           SizedBox(height: 20),
-         
+
           Padding(
             padding: const EdgeInsets.only(top: 2),
             child: Container(
               margin: EdgeInsets.only(left: 20),
               alignment: Alignment.topLeft,
-              child: Text("Sign Up",style: TextStyle(
-                   fontFamily: 'Poppins',
+              child: Text(
+                "Sign Up",
+                style: TextStyle(
+                  fontFamily: 'Poppins',
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                 ),),
+                ),
+              ),
             ),
           ),
           SizedBox(height: 20),
@@ -78,7 +81,7 @@ class Signupscreen extends StatelessWidget {
             ),
           ),
           SizedBox(height: 16),
-          
+
           Container(
             alignment: Alignment(-0.9, 0),
             child: Text(

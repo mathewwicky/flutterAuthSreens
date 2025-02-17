@@ -26,7 +26,7 @@ class Signscreen extends StatelessWidget {
                 "Log in",
                 style: TextStyle(
                   fontFamily: 'Poppins',
-                  fontSize: 28,
+                  fontSize: 30,
                   fontWeight: FontWeight.bold,
                 ),
               ),

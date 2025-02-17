@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_auth/forgotpassword.dart';
 import 'package:flutter_auth/forgotpasswordcode.dart';
+import 'package:flutter_auth/passwordchanged.dart';
+import 'package:flutter_auth/resetpassword.dart';
 import 'package:flutter_auth/signupscreen.dart';
 import 'package:flutter_auth/signscreen.dart';
 
@@ -21,6 +23,8 @@ class MyApp extends StatelessWidget {
         '/signin': (context) => Signscreen(),
         '/forgotpassword': (context) => Forgotpassword(),
         '/forgotpasswordcode': (context) => Forgotpasswordcode(),
+        '/resetpassword': (context) => Resetpassword(),
+        '/passwordchanged': (context) => Passwordchanged(),
       },
       //home: ,
     );
